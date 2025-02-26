@@ -4,6 +4,7 @@ import com.genico.aishnica.dto.AiSolutionDto;
 import com.genico.aishnica.service.AiSolutionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -34,7 +35,10 @@ public class AiSolutionController {
 
     @PostMapping
     public ResponseEntity<AiSolutionDto> createAiSolution(@RequestBody AiSolutionDto aiSolutionDto) {
-        return new ResponseEntity<>(aiSolutionService.createAiSolution(aiSolutionDto), HttpStatus.CREATED);
+        AiSolutionDto createdDto = aiSolutionService.createAiSolution(aiSolutionDto);
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(createdDto);
     }
 
     @PutMapping("/{id}")

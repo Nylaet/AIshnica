@@ -1,11 +1,14 @@
 package com.genico.aishnica.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.time.LocalDateTime;
 
 public class CommitHistoryDto {
 
     private Long id;
     private String commitMessage;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime commitDate;
     private String aiInteraction;
     private Long projectId;

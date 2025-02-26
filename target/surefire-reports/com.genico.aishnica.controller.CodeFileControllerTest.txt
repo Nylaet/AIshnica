@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.genico.aishnica.controller.CodeFileControllerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.245 s <<< FAILURE! -- in com.genico.aishnica.controller.CodeFileControllerTest
-com.genico.aishnica.controller.CodeFileControllerTest.testUpdateCodeFile -- Time elapsed: 0.024 s <<< FAILURE!
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.204 s <<< FAILURE! -- in com.genico.aishnica.controller.CodeFileControllerTest
+com.genico.aishnica.controller.CodeFileControllerTest.testUpdateCodeFile -- Time elapsed: 0.030 s <<< FAILURE!
 java.lang.AssertionError: Content type not set
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:37)
 	at org.springframework.test.util.AssertionErrors.assertTrue(AssertionErrors.java:70)
@@ -14,7 +14,7 @@ java.lang.AssertionError: Content type not set
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
-com.genico.aishnica.controller.CodeFileControllerTest.testCreateCodeFile -- Time elapsed: 0.025 s <<< FAILURE!
+com.genico.aishnica.controller.CodeFileControllerTest.testCreateCodeFile -- Time elapsed: 0.024 s <<< FAILURE!
 java.lang.AssertionError: Content type not set
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:37)
 	at org.springframework.test.util.AssertionErrors.assertTrue(AssertionErrors.java:70)

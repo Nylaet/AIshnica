@@ -1,6 +1,7 @@
 com\genico\aishnica\service\CodeFileServiceTest.class
 com\genico\aishnica\controller\CodeFileControllerTest.class
 com\genico\aishnica\controller\AiSolutionControllerTest.class
+com\genico\aishnica\JacksonConfig.class
 com\genico\aishnica\service\TaskServiceTest.class
 com\genico\aishnica\controller\ProjectControllerTest.class
 com\genico\aishnica\controller\TaskControllerTest.class

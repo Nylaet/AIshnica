@@ -1,20 +1,25 @@
 -------------------------------------------------------------------------------
 Test set: com.genico.aishnica.controller.AiSolutionControllerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.069 s <<< FAILURE! -- in com.genico.aishnica.controller.AiSolutionControllerTest
-com.genico.aishnica.controller.AiSolutionControllerTest.testCreateAiSolution -- Time elapsed: 3.836 s <<< FAILURE!
-java.lang.AssertionError: Content type not set
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:37)
-	at org.springframework.test.util.AssertionErrors.assertTrue(AssertionErrors.java:70)
-	at org.springframework.test.util.AssertionErrors.assertNotNull(AssertionErrors.java:106)
-	at org.springframework.test.web.servlet.result.ContentResultMatchers.lambda$contentType$0(ContentResultMatchers.java:85)
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.161 s <<< FAILURE! -- in com.genico.aishnica.controller.AiSolutionControllerTest
+com.genico.aishnica.controller.AiSolutionControllerTest.testCreateAiSolution -- Time elapsed: 2.972 s <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.aiName"
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:302)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:99)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:111)
 	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
-	at com.genico.aishnica.controller.AiSolutionControllerTest.testCreateAiSolution(AiSolutionControllerTest.java:79)
+	at com.genico.aishnica.controller.AiSolutionControllerTest.testCreateAiSolution(AiSolutionControllerTest.java:80)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.IllegalArgumentException: json can not be null or empty
+	at com.jayway.jsonpath.internal.Utils.notEmpty(Utils.java:401)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:390)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:377)
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:299)
+	... 7 more
 
-com.genico.aishnica.controller.AiSolutionControllerTest.testUpdateAiSolution -- Time elapsed: 0.031 s <<< FAILURE!
+com.genico.aishnica.controller.AiSolutionControllerTest.testUpdateAiSolution -- Time elapsed: 0.027 s <<< FAILURE!
 java.lang.AssertionError: Content type not set
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:37)
 	at org.springframework.test.util.AssertionErrors.assertTrue(AssertionErrors.java:70)

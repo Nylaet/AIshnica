@@ -1,5 +1,7 @@
 package com.genico.aishnica.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.time.LocalDateTime;
 
 public class TaskDto {
@@ -8,6 +10,7 @@ public class TaskDto {
     private String name;
     private String description;
     private String status;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime creationDate;
     private Long projectId;
 
