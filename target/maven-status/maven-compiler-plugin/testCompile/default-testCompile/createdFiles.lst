@@ -1,0 +1,10 @@
+com\genico\aishnica\service\CodeFileServiceTest.class
+com\genico\aishnica\controller\CodeFileControllerTest.class
+com\genico\aishnica\controller\AiSolutionControllerTest.class
+com\genico\aishnica\service\TaskServiceTest.class
+com\genico\aishnica\controller\ProjectControllerTest.class
+com\genico\aishnica\controller\TaskControllerTest.class
+com\genico\aishnica\service\AiSolutionServiceTest.class
+com\genico\aishnica\service\ProjectServiceTest.class
+com\genico\aishnica\controller\CommitHistoryControllerTest.class
+com\genico\aishnica\service\CommitHistoryServiceTest.class

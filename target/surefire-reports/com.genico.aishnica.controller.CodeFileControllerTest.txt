@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.genico.aishnica.controller.CodeFileControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.245 s <<< FAILURE! -- in com.genico.aishnica.controller.CodeFileControllerTest
+com.genico.aishnica.controller.CodeFileControllerTest.testUpdateCodeFile -- Time elapsed: 0.024 s <<< FAILURE!
+java.lang.AssertionError: Content type not set
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:37)
+	at org.springframework.test.util.AssertionErrors.assertTrue(AssertionErrors.java:70)
+	at org.springframework.test.util.AssertionErrors.assertNotNull(AssertionErrors.java:106)
+	at org.springframework.test.web.servlet.result.ContentResultMatchers.lambda$contentType$0(ContentResultMatchers.java:85)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.genico.aishnica.controller.CodeFileControllerTest.testUpdateCodeFile(CodeFileControllerTest.java:92)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.genico.aishnica.controller.CodeFileControllerTest.testCreateCodeFile -- Time elapsed: 0.025 s <<< FAILURE!
+java.lang.AssertionError: Content type not set
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:37)
+	at org.springframework.test.util.AssertionErrors.assertTrue(AssertionErrors.java:70)
+	at org.springframework.test.util.AssertionErrors.assertNotNull(AssertionErrors.java:106)
+	at org.springframework.test.web.servlet.result.ContentResultMatchers.lambda$contentType$0(ContentResultMatchers.java:85)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.genico.aishnica.controller.CodeFileControllerTest.testCreateCodeFile(CodeFileControllerTest.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
